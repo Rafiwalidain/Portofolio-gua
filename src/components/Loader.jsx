@@ -5,7 +5,7 @@ const Loader = () => {
   const { progress } = useProgress();
 
   return (
-    <html>
+    <Html>
       <span className="canvas-load"></span>
       <p
         style={{
@@ -17,7 +17,7 @@ const Loader = () => {
       >
         {progress.toFixed(2)}%
       </p>
-    </html>
+    </Html>
   );
 };
 
