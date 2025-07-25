@@ -7,6 +7,10 @@ import { EarthCanvas } from "./canvas";
 import { slideIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
+// template email = template_5l28dzu
+// service id = service_0hlffdk
+// id profil = tSLlWVosg0S7fe-QN
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -17,9 +21,47 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-  const handleSubmit = (e) => {};
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_0hlffdk",
+        "template_5l28dzu",
+        {
+          from_name: form.name,
+          to_name: "Rafi",
+          from_email: form.email,
+          to_email: "contact@jsmastery.pro",
+          message: form.message,
+        },
+        "tSLlWVosg0S7fe-QN"
+      )
+      .then(() => {
+        setLoading(false);
+        alert("Thank you. I will get back to you as soon as possible.");
+
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })((error) => {
+      setLoading(false);
+      console.error(error);
+      alert("Something went wrong.");
+    });
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
