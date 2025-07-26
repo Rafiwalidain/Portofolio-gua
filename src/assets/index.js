@@ -19,6 +19,11 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import php from "./tech/php.png";
+import laravel from "./tech/laravel.png";
+import c from "./tech/c.png";
+import python from "./tech/python.png";
+import phpmyadmin from "./tech/phpmyadmin.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
@@ -62,5 +67,10 @@ export {
   jobit,
   tripguide,
   freelancer,
+  c,
+  python,
+  phpmyadmin,
+  php,
+  laravel,
   angkasapura,
 };
