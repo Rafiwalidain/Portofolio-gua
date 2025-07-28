@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
@@ -12,10 +13,14 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915eff]">Rafi</span>
+          <h1 className="text-[40px] lg:text-[60px] font-bold text-white">
+            Hi, I'm{" "}
+            <span className="text-[#915eff]">
+              <Typewriter words={["Rafi"]} loop={true} cursor cursorStyle="|" typeSpeed={10} deleteSpeed={50} delaySpeed={1000} />
+            </span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+
+          <p className="mt-2 text-white-100 text-[20px]">
             I'm Junior Web Developer <br /> and graphic designer
           </p>
         </div>
