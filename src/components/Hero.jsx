@@ -16,7 +16,7 @@ const Hero = () => {
           <h1 className="text-[40px] lg:text-[60px] font-bold text-white">
             Hi, I'm{" "}
             <span className="text-[#915eff]">
-              <Typewriter words={["Rafi"]} loop={true} cursor cursorStyle="|" typeSpeed={10} deleteSpeed={50} delaySpeed={1000} />
+              <Typewriter words={["Rafi"]} loop={true} cursor cursorStyle="|" typeSpeed={100} deleteSpeed={100} delaySpeed={1000} />
             </span>
           </h1>
 
