@@ -1,3 +1,4 @@
+// StarsCanvas.jsx
 import { useState, useEffect, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
@@ -5,11 +6,11 @@ import * as random from "maath/random/dist/maath-random.esm";
 
 const Stars = (props) => {
   const ref = useRef();
-  const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 2 }));
+  const [sphere] = useState(() => random.inSphere(new Float32Array(1500), { radius: 2 })); // lebih ringan
 
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta / 10;
-    ref.current.rotation.y -= delta / 15;
+    ref.current.rotation.x -= delta / 20;
+    ref.current.rotation.y -= delta / 25;
   });
 
   return (
@@ -23,9 +24,14 @@ const Stars = (props) => {
 
 const StarsCanvas = () => {
   const [sparkles, setSparkles] = useState([]);
+  const lastSpawnRef = useRef(0);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
+      const now = Date.now();
+      if (now - lastSpawnRef.current < 50) return; // throttle per 50ms
+      lastSpawnRef.current = now;
+
       const id = Math.random().toString(36).substring(7);
       const newSparkle = {
         id,
@@ -35,7 +41,6 @@ const StarsCanvas = () => {
 
       setSparkles((prev) => [...prev, newSparkle]);
 
-      // Hapus sparkle setelah 500ms
       setTimeout(() => {
         setSparkles((prev) => prev.filter((s) => s.id !== id));
       }, 500);
@@ -47,16 +52,17 @@ const StarsCanvas = () => {
 
   return (
     <div className="w-full h-auto absolute inset-0 z-[-1] overflow-hidden pointer-events-none">
-      {/* Sparkle Effect */}
+      {/* Sparkle effect */}
       {sparkles.map((s) => (
         <div
           key={s.id}
-          className="fixed w-2 h-2 rounded-full bg-white opacity-80 animate-ping-sparkle"
+          className="fixed w-2 h-2 rounded-full opacity-80 animate-ping-sparkle"
           style={{
             left: s.x,
             top: s.y,
             transform: "translate(-50%, -50%)",
             pointerEvents: "none",
+            backgroundColor: `hsl(${Math.random() * 360}, 100%, 80%)`,
           }}
         />
       ))}
