@@ -22,6 +22,21 @@ module.exports = {
       //   "hero-pattern": "url('/src/assets/herobg2.png')",
       // },
     },
+    animation: {
+      "ping-sparkle": "sparkle 0.6s ease-out forwards",
+    },
+    keyframes: {
+      sparkle: {
+        "0%": {
+          opacity: 1,
+          transform: "scale(1)",
+        },
+        "100%": {
+          opacity: 0,
+          transform: "scale(1.8)",
+        },
+      },
+    },
   },
   plugins: [],
 };
