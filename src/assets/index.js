@@ -24,7 +24,7 @@ import laravel from "./tech/laravel.png";
 import c from "./tech/c.png";
 import python from "./tech/python.png";
 import phpmyadmin from "./tech/phpmyadmin.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
