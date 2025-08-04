@@ -1,16 +1,18 @@
-// StarsCanvas.jsx
 import { useState, useEffect, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 
+// Komponen Bintang
 const Stars = (props) => {
   const ref = useRef();
-  const [sphere] = useState(() => random.inSphere(new Float32Array(1500), { radius: 2 })); // lebih ringan
+  const [sphere] = useState(() => random.inSphere(new Float32Array(1500), { radius: 2 }));
 
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta / 20;
-    ref.current.rotation.y -= delta / 25;
+    if (ref.current) {
+      ref.current.rotation.x -= delta / 20;
+      ref.current.rotation.y -= delta / 25;
+    }
   });
 
   return (
@@ -24,20 +26,31 @@ const Stars = (props) => {
 
 const StarsCanvas = () => {
   const [sparkles, setSparkles] = useState([]);
+  const [isMobile, setIsMobile] = useState(false);
   const lastSpawnRef = useRef(0);
 
+  // Deteksi layar mobile
   useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 640px)");
+    setIsMobile(mediaQuery.matches);
+
+    const handleResize = (e) => setIsMobile(e.matches);
+    mediaQuery.addEventListener("change", handleResize);
+
+    return () => mediaQuery.removeEventListener("change", handleResize);
+  }, []);
+
+  // Sparkle hanya untuk desktop
+  useEffect(() => {
+    if (isMobile) return;
+
     const handleMouseMove = (e) => {
       const now = Date.now();
-      if (now - lastSpawnRef.current < 50) return; // throttle per 50ms
+      if (now - lastSpawnRef.current < 50) return;
       lastSpawnRef.current = now;
 
       const id = Math.random().toString(36).substring(7);
-      const newSparkle = {
-        id,
-        x: e.clientX,
-        y: e.clientY,
-      };
+      const newSparkle = { id, x: e.clientX, y: e.clientY };
 
       setSparkles((prev) => [...prev, newSparkle]);
 
@@ -48,11 +61,13 @@ const StarsCanvas = () => {
 
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
+  }, [isMobile]);
+
+  // Di mobile, return <div kosong> saja supaya ringan
+  if (isMobile) return <div className="absolute inset-0 z-[-1] bg-black" />;
 
   return (
     <div className="w-full h-auto absolute inset-0 z-[-1] overflow-hidden pointer-events-none">
-      {/* Sparkle effect */}
       {sparkles.map((s) => (
         <div
           key={s.id}
