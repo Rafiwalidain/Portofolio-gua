@@ -23,11 +23,21 @@ const Hero = () => {
           <p className="mt-2 text-white-100 text-[20px]">
             I'm Junior Web Developer <br /> and graphic designer
           </p>
+
+          {/* <div className="mt-5">
+            <a
+              href="/Rafi-CV.pdf" // pastikan file ada di folder `public`
+              download
+              className="inline-block bg-[#915eff] hover:bg-[#7c4dff] text-white font-semibold py-2 px-5 rounded-lg transition-all duration-300"
+            >
+              Download CV
+            </a>
+          </div> */}
         </div>
       </div>
       <ComputersCanvas />
 
-      <div className="absolute xs:bottom-6 bottom-9 w-full flex justify-center items-center">
+      <div className="hidden sm:flex absolute bottom-9 w-full justify-center items-center">
         <a href="#about">
           <div className="w-[33px] h-[50px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div animate={{ y: [0, 14, 0] }} transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }} className="w-3 h-3 rounded-full bg-secondary mb-1" />

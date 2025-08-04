@@ -7,7 +7,7 @@ import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
   const group = React.useRef();
-  const computer = useGLTF("./desktop_pc/scene.glb");
+  const computer = useGLTF("./desktop_pc/scene2.glb");
   const { actions } = useAnimations(computer.animations, group);
 
   useEffect(() => {
