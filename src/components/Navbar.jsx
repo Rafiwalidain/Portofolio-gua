@@ -70,6 +70,17 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+            <div className="flex gap-3">
+              <a href="https://github.com/Rafiwalidain" target="_blank" rel="noopener noreferrer">
+                <FaGithub className="text-secondary text-[22px] hover:text-white" />
+              </a>
+              <a href="https://linkedin.com/in/m-rafi-walidain" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="text-secondary text-[22px] hover:text-blue-400" />
+              </a>
+              <a href="https://www.instagram.com/rafii_waliidain" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="text-secondary text-[22px] hover:text-red-400" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
