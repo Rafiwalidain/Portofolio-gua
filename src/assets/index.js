@@ -36,6 +36,9 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import jjk from "./jjk.jpg";
+import pyt from "./pyt.jpg";
+import abs from "./abs.jpg";
 
 export {
   logo,
@@ -65,6 +68,9 @@ export {
   tesla,
   carrent,
   jobit,
+  abs,
+  jjk,
+  pyt,
   tripguide,
   freelancer,
   c,
