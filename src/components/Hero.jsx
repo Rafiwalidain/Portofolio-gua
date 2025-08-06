@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
-import { styles } from "../styles";
+// import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {

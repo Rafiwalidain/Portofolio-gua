@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF, useAnimations } from "@react-three/drei";
+import { Preload, useGLTF, useAnimations } from "@react-three/drei";
 import * as THREE from "three";
 
 import CanvasLoader from "../Loader";

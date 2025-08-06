@@ -7,8 +7,8 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import Background from "three/src/renderers/common/Background.js";
-import { div } from "framer-motion/client";
+// import Background from "three/src/renderers/common/Background.js";
+// import { div } from "framer-motion/client";
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement

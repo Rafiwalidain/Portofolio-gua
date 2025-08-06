@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { technologies } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
