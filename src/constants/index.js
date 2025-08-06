@@ -132,10 +132,12 @@ const experiences = [
     iconBg: "#383E56",
     date: "December 2021 - April 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Handled troubleshooting for software, hardware, network systems, printers, and other work tools.",
+      "Performed installation and configuration of client PCs and laptops.",
+      "Assisted in network management, including LAN/WAN setup and switch configuration.",
+      "Conducted routine maintenance, such as data backups and system updates.",
+      "Provided technical support to clients through short training sessions and remote desktop assistance.",
+      "Documented all tasks in accordance with established Standard Operating Procedures (SOPs).",
     ],
   },
   {
@@ -145,10 +147,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "June 2023 - Now",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Created visual designs based on client requests using Canva and Adobe Photoshop.",
+      "Designed digital assets including posters, social media content, and basic branding materials.",
+      "Communicated directly with clients to gather feedback and perform revisions.",
+      "Held virtual meetings to ensure the final design aligned with client expectations.",
     ],
   },
 ];
@@ -156,7 +158,7 @@ const experiences = [
 const projects = [
   {
     name: "Jujutsu Kaisen",
-    description: "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    description: "A responsive personal website that displays profile information, skills, and anime-style character cards with light animations. Designed to showcase UI/UX and front-end development skills.",
     tags: [
       {
         name: "CSS",
@@ -176,7 +178,7 @@ const projects = [
   },
   {
     name: "Fastest Route A-Star",
-    description: "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    description: "A web application that calculates the fastest delivery route using the A* algorithm. Users enter a destination address, and the system generates a route map with street names and visual graphs.",
     tags: [
       {
         name: "Python",
@@ -192,7 +194,7 @@ const projects = [
   },
   {
     name: "System Absensi",
-    description: "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    description: "A real-time web-based attendance system designed for both employees and admin. This system allows employees to check in and out, while admins can manage, approve attendance, and monitor daily activity logs.",
     tags: [
       {
         name: "PHP",
