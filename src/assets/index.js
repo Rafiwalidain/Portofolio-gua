@@ -19,7 +19,7 @@ import laravel from "./tech/laravel.webp";
 import c from "./tech/c.webp";
 import python from "./tech/python.webp";
 import phpmyadmin from "./tech/phpmyadmin.webp";
-import threejs from "./tech/threejs.webp";
+import threejs from "./tech/Threejs.webp";
 
 import angkasapura from "./company/angkasapura.webp";
 import freelancer from "./company/freelancer.webp";
