@@ -2,7 +2,7 @@ import logo from "./logo.webp";
 import backend from "./backend.webp";
 import desaigner from "./desaigner.webp";
 import web from "./web.webp";
-import github from "./github.png";
+import github from "./github.webp";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -19,7 +19,7 @@ import laravel from "./tech/laravel.webp";
 import c from "./tech/c.webp";
 import python from "./tech/python.webp";
 import phpmyadmin from "./tech/phpmyadmin.webp";
-import threejs from "./tech/threejs.png";
+import threejs from "./tech/threejs.webp";
 
 import angkasapura from "./company/angkasapura.webp";
 import freelancer from "./company/freelancer.webp";
