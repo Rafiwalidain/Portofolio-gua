@@ -1,4 +1,4 @@
-import { mobile, backend, web, javascript, html, css, reactjs, tailwind, nodejs, git, figma, jjk, pyt, abs, threejs, angkasapura, c, python, phpmyadmin, php, laravel, freelancer } from "../assets";
+import { desaigner, backend, web, javascript, html, css, reactjs, tailwind, nodejs, git, figma, jjk, pyt, abs, threejs, angkasapura, c, python, phpmyadmin, php, laravel, freelancer } from "../assets";
 
 export const navLinks = [
   {
@@ -22,7 +22,7 @@ const services = [
   },
   {
     title: "Desaigner",
-    icon: mobile,
+    icon: desaigner,
   },
   {
     title: "Backend Developer",

@@ -1,32 +1,31 @@
-import logo from "./logo.png";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+import logo from "./logo.webp";
+import backend from "./backend.webp";
+import desaigner from "./desaigner.webp";
+import web from "./web.webp";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import tailwind from "./tech/tailwind.png";
-import php from "./tech/php.png";
-import laravel from "./tech/laravel.png";
-import c from "./tech/c.png";
-import python from "./tech/python.png";
-import phpmyadmin from "./tech/phpmyadmin.png";
+import css from "./tech/css.webp";
+import figma from "./tech/figma.webp";
+import git from "./tech/git.webp";
+import html from "./tech/html.webp";
+import javascript from "./tech/javascript.webp";
+import nodejs from "./tech/nodejs.webp";
+import reactjs from "./tech/reactjs.webp";
+import tailwind from "./tech/tailwind.webp";
+import php from "./tech/php.webp";
+import laravel from "./tech/laravel.webp";
+import c from "./tech/c.webp";
+import python from "./tech/python.webp";
+import phpmyadmin from "./tech/phpmyadmin.webp";
 import threejs from "./tech/threejs.png";
 
-import angkasapura from "./company/angkasapura.png";
-import freelancer from "./company/freelancer.png";
+import angkasapura from "./company/angkasapura.webp";
+import freelancer from "./company/freelancer.webp";
 
 import jjk from "./jjk.jpg";
 import pyt from "./pyt.jpg";
 import abs from "./abs.jpg";
 
-export { logo, backend, creator, mobile, web, github, menu, close, css, figma, git, html, javascript, nodejs, reactjs, tailwind, threejs, abs, jjk, pyt, freelancer, c, python, phpmyadmin, php, laravel, angkasapura };
+export { logo, backend, desaigner, web, github, menu, close, css, figma, git, html, javascript, nodejs, reactjs, tailwind, threejs, abs, jjk, pyt, freelancer, c, python, phpmyadmin, php, laravel, angkasapura };
