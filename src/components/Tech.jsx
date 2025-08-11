@@ -7,7 +7,7 @@ import { fadeIn } from "../utils/motion";
 const TechCard = ({ index, title, icon }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", 0.2 * index, 0.75)} className="bg-tertiary rounded-[20px] p-5 w-[130px] sm:w-[180px] flex flex-col items-center shadow-card">
-      <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+      <img src={icon} alt={title} className="w-16 h-16 object-contain" loading="lazy" />
       <p className="text-white text-center text-[14px] mt-2">{title}</p>
     </motion.div>
   );
