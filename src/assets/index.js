@@ -23,9 +23,10 @@ import threejs from "./tech/Threejs.webp";
 
 import angkasapura from "./company/angkasapura.webp";
 import freelancer from "./company/freelancer.webp";
+import jtv from "./company/jtv.webp";
 
 import jjk from "./jjk.jpg";
 import pyt from "./pyt.jpg";
 import abs from "./abs.jpg";
 
-export { logo, backend, desaigner, web, github, menu, close, css, figma, git, html, javascript, nodejs, reactjs, tailwind, threejs, abs, jjk, pyt, freelancer, c, python, phpmyadmin, php, laravel, angkasapura };
+export { logo, backend, desaigner, web, github, menu, close, css, figma, git, html, javascript, nodejs, reactjs, tailwind, threejs, abs, jjk, pyt, freelancer, c, python, phpmyadmin, php, laravel, angkasapura, jtv };

@@ -1,4 +1,4 @@
-import { desaigner, backend, web, javascript, html, css, reactjs, tailwind, nodejs, git, figma, jjk, pyt, abs, threejs, angkasapura, c, python, phpmyadmin, php, laravel, freelancer } from "../assets";
+import { desaigner, jtv, backend, web, javascript, html, css, reactjs, tailwind, nodejs, git, figma, jjk, pyt, abs, threejs, angkasapura, c, python, phpmyadmin, php, laravel, freelancer } from "../assets";
 
 export const navLinks = [
   {
@@ -118,6 +118,22 @@ const experiences = [
       "Held virtual meetings to ensure the final design aligned with client expectations.",
     ],
   },
+  {
+    title: "Software Engineer",
+    company_name: "PT Jawa Pos Media Televisi (JTV)",
+    icon: jtv,
+    iconBg: "#E6DEDD",
+    date: "August 2025 - December 2025",
+    points: [
+      "Designed and developed an integrated monitoring application for television broadcast scheduling and internal project management.",
+"Built a TV program scheduling module to organize and monitor broadcasting timelines efficiently.",
+"Developed a project management feature similar to Trello for tracking tasks and monitoring workflow progress.",
+"Collaborated in system design, feature implementation, and application structure planning.",
+"Implemented database integration and ensured data consistency across modules.",
+"Performed system testing, debugging, and optimization to improve performance and usability.",
+"Documented development processes and features in accordance with project requirements."
+    ],
+  }
 ];
 
 const projects = [
