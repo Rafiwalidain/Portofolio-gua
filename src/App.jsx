@@ -1,12 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 import ComputersCanvas from "./components/canvas/Computers";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-
         {/* WRAPPER HERO + ABOUT */}
         <div className="relative">
           <div className="absolute inset-0 z-0">
@@ -28,8 +28,8 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
-
       </div>
+      <SpeedInsights />
     </BrowserRouter>
   );
 };
