@@ -8,7 +8,7 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 // import Background from "three/src/renderers/common/Background.js";
-// import { div } from "framer-motion/client";
+import { div } from "framer-motion/client";
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -44,7 +44,7 @@ const ExperienceCard = ({ experience }) => (
 
 const Experience = () => {
   return (
-    <>
+    <section id="experience" className="relative w-full mx-auto py-20">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I Have Done So Far</p>
         <h2 className={styles.sectionHeadText}>Work Experience</h2>
@@ -57,7 +57,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </section>
   );
 };
 

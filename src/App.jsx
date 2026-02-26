@@ -1,23 +1,34 @@
 import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import ComputersCanvas from "./components/canvas/Computers";
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
+
+        {/* WRAPPER HERO + ABOUT */}
+        <div className="relative">
+          <div className="absolute inset-0 z-0">
+            <ComputersCanvas />
+          </div>
+
+          <div className="relative z-10">
+            <Navbar />
+            <Hero />
+            <About />
+          </div>
         </div>
-        <About />
+
         <Experience />
         <Tech />
         <Works />
-        {/* <Feedbacks /> */}
-        <div className="relactive z-0">
+
+        <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>
+
       </div>
     </BrowserRouter>
   );

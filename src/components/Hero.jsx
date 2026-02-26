@@ -1,12 +1,10 @@
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-
-// import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section id="home" className="relative w-full h-screen mx-auto">
       <div className={"${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5"}>
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
@@ -19,23 +17,11 @@ const Hero = () => {
               <Typewriter words={["Rafi"]} loop={true} cursor cursorStyle="|" typeSpeed={100} deleteSpeed={100} delaySpeed={1000} />
             </span>
           </h1>
-
           <p className="mt-2 text-white-100 text-[20px]">
             I'm Junior Web Developer <br /> and graphic designer
           </p>
-
-          {/* <div className="mt-5">
-            <a
-              href="/Rafi-CV.pdf" // pastikan file ada di folder `public`
-              download
-              className="inline-block bg-[#915eff] hover:bg-[#7c4dff] text-white font-semibold py-2 px-5 rounded-lg transition-all duration-300"
-            >
-              Download CV
-            </a>
-          </div> */}
         </div>
       </div>
-      <ComputersCanvas />
 
       <div className="hidden sm:flex bottom-9 w-full justify-center items-center absolute pr-20">
         <a href="#about">

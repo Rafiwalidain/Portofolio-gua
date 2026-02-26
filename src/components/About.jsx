@@ -1,4 +1,4 @@
-// import React from "react";
+
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
@@ -7,7 +7,8 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
-import profile from "../assets/foto1.png"; // sesuaikan path jika berbeda
+import profile from "../assets/foto1.png";
+import { section } from "framer-motion/client";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -24,10 +25,10 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <>
+  <section id="about" className="relative w-full mx-auto py-20">
       {/* WRAPPER SEMUA */}
+      
       <motion.div variants={fadeIn("", "", 0.1, 1)} className="mt-4 flex flex-col md:flex-row gap-10 items-start">
-        {/* KIRI: Judul + Deskripsi */}
         <div className="flex-1">
           <motion.div variants={textVariant()}>
             <p className={styles.sectionSubText}>Introduction</p>
@@ -41,19 +42,17 @@ const About = () => {
           </p>
         </div>
 
-        {/* KANAN: FOTO */}
         <motion.div variants={fadeIn("right", "spring", 0.3, 1)} className="w-full md:w-[310px] flex-shrink-0">
           <img src={profile} alt="Profile" className="w-full h-[400px] rounded-2xl object-cover shadow-lg border border-white/10" loading="lazy" />
         </motion.div>
       </motion.div>
 
-      {/* Kartu Service */}
       <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

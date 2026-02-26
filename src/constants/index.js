@@ -2,12 +2,17 @@ import { desaigner, jtv, backend, web, javascript, html, css, reactjs, tailwind,
 
 export const navLinks = [
   {
+    id: "home",
+    title: "Home",
+  },
+  {
+
     id: "about",
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "experiences",
+    title: "Experience",
   },
   {
     id: "contact",

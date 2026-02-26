@@ -40,7 +40,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
 const Works = () => {
   return (
-    <>
+    <section id="work" className="relative w-full mx-auto py-20">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
@@ -58,7 +58,7 @@ const Works = () => {
           <ProjectCard key={`${project.name}-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 
